@@ -1,25 +1,129 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Destroverse</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DestroVerse</title>
+
 <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
 body{
-background:#000;
-color:#fff;
-font-family:Arial,sans-serif;
-display:flex;
-justify-content:center;
-align-items:center;
-height:100vh;
-text-align:center;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    font-family:Arial, sans-serif;
+    color:white;
+
+    background:
+    radial-gradient(circle at center,
+    #220000 0%,
+    #120000 35%,
+    #050505 100%);
+}
+
+.container{
+    max-width:900px;
+    padding:20px;
+}
+
+.logo{
+    width:420px;
+    max-width:90%;
+    margin-bottom:20px;
+
+    filter:
+        drop-shadow(0 0 20px rgba(255,0,0,0.35))
+        drop-shadow(0 0 40px rgba(255,0,0,0.20));
+}
+
+.subtitle{
+    color:#ff3b3b;
+    font-size:1.3rem;
+    letter-spacing:2px;
+    margin-bottom:40px;
+    font-weight:bold;
+}
+
+.discord-btn{
+    display:inline-block;
+    padding:16px 34px;
+    background:linear-gradient(
+        90deg,
+        #ff1a1a,
+        #b30000
+    );
+
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:12px;
+
+    box-shadow:
+        0 0 15px rgba(255,0,0,.4),
+        0 0 30px rgba(255,0,0,.2);
+
+    transition:.3s;
+}
+
+.discord-btn:hover{
+    transform:scale(1.05);
+
+    box-shadow:
+        0 0 25px rgba(255,0,0,.6),
+        0 0 50px rgba(255,0,0,.3);
+}
+
+.footer{
+    margin-top:35px;
+    color:#999;
+    letter-spacing:1px;
+}
+
+@media(max-width:768px){
+
+.logo{
+    width:300px;
+}
+
+.subtitle{
+    font-size:1rem;
+}
+
+.discord-btn{
+    width:90%;
+}
 }
 </style>
 </head>
+
 <body>
-<div>
-<h1>DESTROVERSE 2.0</h1>
-<h2>SYSTEM REBOOT IN PROGRESS</h2>
-<p>Discord Coming Soon</p>
+
+<div class="container">
+
+<img src="logo.png.png" alt="DestroVerse Logo" class="logo">
+
+<div class="subtitle">
+SYSTEM REBOOT IN PROGRESS
 </div>
+
+<a class="discord-btn"
+href="https://discord.gg/nayRUfHvJY"
+target="_blank">
+🚀 JOIN DESTROVERSE
+</a>
+
+<div class="footer">
+The reboot has begun.
+</div>
+
+</div>
+
 </body>
 </html>
