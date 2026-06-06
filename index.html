@@ -92,20 +92,31 @@ body{
     margin-top:15px;
     padding:12px 26px;
 
-    background:#1a1a1a;
+    background:linear-gradient(
+        90deg,
+        #cc0000,
+        #990000
+    );
+
     color:white;
     text-decoration:none;
     font-weight:bold;
 
     border-radius:10px;
-    border:1px solid #444;
+
+    box-shadow:
+        0 0 10px rgba(255,0,0,.35),
+        0 0 20px rgba(255,0,0,.15);
 
     transition:.3s;
 }
 
 .youtube-btn:hover{
     transform:scale(1.05);
-    border-color:#ff3b3b;
+
+    box-shadow:
+        0 0 20px rgba(255,0,0,.55),
+        0 0 40px rgba(255,0,0,.25);
 }
 
 .footer{
